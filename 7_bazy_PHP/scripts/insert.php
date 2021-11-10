@@ -11,6 +11,7 @@
     require_once './connect.php';
     $sql = "INSERT INTO `users` (`name`, `surrname`, `birthday`) VALUES ('$_POST[name]', '$_POST[surrname]', '$_POST[birthday]');";
     $connect->query($sql);
+    header('location: ../4_bazy_insert.php?dodano=1');
   }
   else {
     header('location: ../4_bazy_insert.php?error=1&info=Nie dodano uzytkownika?addUser=');
