@@ -11,6 +11,10 @@
     {
       echo "$_GET[info]";
     }
+    if(!empty($_GET['dodano']))
+    {
+      echo "Dodano $_GET[dodano] wiersz";
+    }
     ?>
     <h4>Użytkownicy</h4>
 
